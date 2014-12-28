@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Hermit.Plugin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Plugin library for hooking in to the Hermit application")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Deere & Company")]
+[assembly: AssemblyCompany("Lucas Brendel")]
 [assembly: AssemblyProduct("Hermit.Plugin")]
-[assembly: AssemblyCopyright("Copyright © Deere & Company 2014")]
+[assembly: AssemblyCopyright("Copyright © Lucas Brendel 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.0.1.*")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
