@@ -7,11 +7,26 @@ using System.Windows.Input;
 
 namespace Hermit.Plugin.Commands
 {
+    /// <summary>
+    /// Basic command to execute a Command through the CommandManager system.
+    /// </summary>
     public class SimpleCommand : ICommand
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Predicate<object> CanExecuteDelegate { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Action<object> ExecuteDelegate { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parameter"></param>
+        /// <returns></returns>
         public bool CanExecute(object parameter)
         {
             if (CanExecuteDelegate != null)
@@ -19,12 +34,19 @@ namespace Hermit.Plugin.Commands
             return true; // if there is no can execute default to true
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
             if (ExecuteDelegate != null)

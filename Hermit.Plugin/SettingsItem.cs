@@ -8,16 +8,25 @@ using System.ComponentModel.Composition;
 
 namespace Hermit.Plugin
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Export(typeof(ISettingsItem))]    
     public abstract class SettingsItem : PropertyChangedBase, ISettingsItem
     {
-
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public SettingsItem()
         {
             _DisplayName = "Settings Item";
         }
 
         private string _DisplayName;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string DisplayName
         {
             get

@@ -13,23 +13,26 @@ using Caliburn.Micro;
 
 namespace Hermit.Plugin
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AppearanceSettings : PropertyChangedBase
     {
-        private List<AccentColorData> accentColors;
+        private List<AccentColorData> _AccentColors;
 
-        private List<ThemeColorData> themeColors;
+        private List<ThemeColorData> _ThemeColors;
 
         /// <summary>
         /// List of all accent colors supported by MahApps.Metro
         /// </summary>
         public List<AccentColorData> AccentColors
         {
-            get { return accentColors; }
+            get { return _AccentColors; }
             set
             {
-                if (value != accentColors)
+                if (value != _AccentColors)
                 {
-                    accentColors = value;
+                    _AccentColors = value;
                     NotifyOfPropertyChange(() => AccentColors);
                 }
             }
@@ -40,12 +43,12 @@ namespace Hermit.Plugin
         /// </summary>
         public List<ThemeColorData> ThemeColors
         {
-            get { return themeColors; }
+            get { return _ThemeColors; }
             set
             {
-                if (value != themeColors)
+                if (value != _ThemeColors)
                 {
-                    themeColors = value;
+                    _ThemeColors = value;
                     NotifyOfPropertyChange(() => ThemeColors);
                 }
             }
@@ -71,22 +74,43 @@ namespace Hermit.Plugin
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class ColorData
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Brush BorderColorBrush { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Brush ColorBrush { get; set; }
 
-        private ICommand changeColorCommand;
+        private ICommand _ChangeColorCommand;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ICommand ChangeColorCommand
         {
             get
             {
-                return this.changeColorCommand ?? (changeColorCommand = new SimpleCommand { CanExecuteDelegate = x => true, ExecuteDelegate = x => this.DoChangeColor(x) });
+                return this._ChangeColorCommand ?? (_ChangeColorCommand = new SimpleCommand { CanExecuteDelegate = x => true, ExecuteDelegate = x => this.DoChangeColor(x) });
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
         public virtual void DoChangeColor(object sender)
         {
             var theme = ThemeManager.DetectAppStyle(Application.Current);
@@ -97,11 +121,17 @@ namespace Hermit.Plugin
         
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class AccentColorData : ColorData
     {
 
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class ThemeColorData : ColorData
     {
         public override void DoChangeColor(object sender)

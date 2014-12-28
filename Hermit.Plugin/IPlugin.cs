@@ -7,6 +7,9 @@ using Caliburn.Micro;
 
 namespace Hermit.Plugin
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IPlugin : IHaveDisplayName
     {
     }

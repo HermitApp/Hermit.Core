@@ -7,6 +7,9 @@ using System.ComponentModel.Composition;
 
 namespace Hermit.Plugin
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [InheritedExport]
     public interface ISettingsItem : IPlugin
     {
