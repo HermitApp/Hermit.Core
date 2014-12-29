@@ -9,6 +9,7 @@ using System.ComponentModel.Composition;
 
 namespace Hermit.Plugin
 {
+    [Export(typeof(IShell))]
     public class Shell : Screen, IShell
     {
         public Shell()

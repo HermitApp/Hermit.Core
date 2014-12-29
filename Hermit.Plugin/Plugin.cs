@@ -8,6 +8,7 @@ using System.ComponentModel.Composition;
 
 namespace Hermit.Plugin
 {
+    [Export(typeof(IPlugin))]
     public class Plugin : PropertyChangedBase, IPlugin
     {
         private string _DisplayName;
