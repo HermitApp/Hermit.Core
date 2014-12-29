@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="AppearanceSettings.cs" />
     <Compile Include="Commands\SimpleCommand.cs" />
+    <Compile Include="IHaveStartupTask.cs" />
     <Compile Include="IPlugin.cs" />
     <Compile Include="ISettingsItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
