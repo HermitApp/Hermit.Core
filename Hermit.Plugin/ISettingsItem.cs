@@ -8,11 +8,14 @@ using System.ComponentModel.Composition;
 namespace Hermit.Plugin
 {
     /// <summary>
-    /// 
+    /// Settings window
     /// </summary>
     [InheritedExport]
     public interface ISettingsItem
     {
+        /// <summary>
+        /// Name of item for Settings
+        /// </summary>
         string Name { get; }
     }
 }
