@@ -65,9 +65,7 @@
     <Compile Include="IPlugin.cs" />
     <Compile Include="ISettingsItem.cs" />
     <Compile Include="IShell.cs" />
-    <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SettingsItem.cs" />
     <Compile Include="Shell.cs" />
   </ItemGroup>
   <ItemGroup>

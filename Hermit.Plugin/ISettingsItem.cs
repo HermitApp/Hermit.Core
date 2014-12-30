@@ -11,7 +11,8 @@ namespace Hermit.Plugin
     /// 
     /// </summary>
     [InheritedExport]
-    public interface ISettingsItem : IPlugin
+    public interface ISettingsItem
     {
+        string Name { get; }
     }
 }
