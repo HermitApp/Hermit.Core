@@ -10,17 +10,19 @@ namespace Hermit.Plugin.Tests
 {
     public class AppearanceSettingsTest
     {
-        public class AccentColorDataTest
+        
+    }
+
+    public class AccentColorDataTest
+    {
+        [Fact]
+        public void CreateObject()
         {
-            [Fact]
-            public void CreateObject()
-            {
-                AccentColorData accent = new AccentColorData();
+            AccentColorData accent = new AccentColorData();
 
-                accent.Name = "Red";
+            accent.Name = "Red";
 
-                Assert.Equal("Red", accent.Name);
-            }
+            Assert.Equal("Red", accent.Name);
         }
     }
 }
