@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Hermit.Plugin.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Deere & Company")]
+[assembly: AssemblyCompany("HermitApp")]
 [assembly: AssemblyProduct("Hermit.Plugin.Tests")]
-[assembly: AssemblyCopyright("Copyright © Deere & Company 2014")]
+[assembly: AssemblyCopyright("Copyright ©HermitApp 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
