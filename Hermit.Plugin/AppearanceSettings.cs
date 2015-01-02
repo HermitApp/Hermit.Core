@@ -14,7 +14,7 @@ using Caliburn.Micro;
 namespace Hermit.Plugin
 {
     /// <summary>
-    /// 
+    /// Gives user access to the window appearance
     /// </summary>
     public class AppearanceSettings : PropertyChangedBase
     {
@@ -39,7 +39,7 @@ namespace Hermit.Plugin
         }
 
         /// <summary>
-        /// 
+        /// Theme options for window
         /// </summary>
         public List<ThemeColorData> ThemeColors
         {
@@ -69,7 +69,6 @@ namespace Hermit.Plugin
         public void SetThemeLight()
         {
             var theme = ThemeManager.DetectAppStyle(Application.Current);
-
             ThemeManager.ChangeAppStyle(Application.Current, theme.Item2, theme.Item1);
         }
     }
@@ -80,24 +79,24 @@ namespace Hermit.Plugin
     public abstract class ColorData
     {
         /// <summary>
-        /// 
+        /// Name of color
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// Color of border
         /// </summary>
         public Brush BorderColorBrush { get; set; }
 
         /// <summary>
-        /// 
+        /// Color of color...
         /// </summary>
         public Brush ColorBrush { get; set; }
 
         private ICommand _ChangeColorCommand;
 
         /// <summary>
-        /// 
+        /// Command to change color
         /// </summary>
         public ICommand ChangeColorCommand
         {
