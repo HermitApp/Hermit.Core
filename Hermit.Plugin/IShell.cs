@@ -14,5 +14,10 @@ namespace Hermit.Plugin
     [InheritedExport]
     public interface IShell : IHaveDisplayName
     {
+        /// <summary>
+        /// Startup task for all shells
+        /// </summary>
+        /// <param name="args"></param>
+        void Startup(string[] args);
     }
 }
