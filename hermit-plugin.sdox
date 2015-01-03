@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SDConfig>
+  <section guid="9e8e8bc4-bfdd-11e3-a297-170828518c08">
+    <item key="HeaderBackground" value="#3F72DB" />
+    <item key="SubHeaderBackground" value="#2862db" />
+    <item key="Color" value="#FFFFFF" />
+    <item key="DisableSequenceDiagrams" value="False" />
+  </section>
+  <section guid="feacbce2-8290-4d90-bb05-373b9d7dbbfc">
+    <item key="ConfigFileName" value="hermit-plugin" />
+    <item key="PathToConfig" value="C:\Projects\Windows\hermit-plugin\hermit-plugin.sdox" />
+    <item key="LastBuild" value="3.1.2015 - 14:46" />
+    <item key="ProjectName" value="Hermit.Plugin" />
+    <item key="ProjectUrl" value="HermitApp.github.io/hermit-plugin" />
+    <item key="Author" value="Lucas Brendel" />
+    <item key="VersionNumber" value="" />
+    <item key="InputFile" value="C:\Projects\Windows\hermit-plugin\Hermit.Plugin.sln" />
+    <item key="OutputPath" value="C:\Projects\Windows\hermit-plugin\docs" />
+    <item key="DocLanguage" value="en" />
+    <item key="ExcludePrivate" value="False" />
+    <item key="ExcludeProtected" value="False" />
+    <item key="ExcludeInternal" value="False" />
+    <item key="ExcludedIdentifiers" value="" />
+    <item key="ActivatedExporters" value="Html" />
+  </section>
+</SDConfig>
